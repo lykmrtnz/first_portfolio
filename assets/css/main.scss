@@ -1,0 +1,29 @@
+/*-- overwirte bootstrap's variable --*/
+$font-family-sans-serif: Arial, sans-serif;
+
+
+/*-- import the functions & variables --*/
+@import '../bootstrap/scss/_functions';
+@import '../bootstrap/scss/_variables';
+
+
+/*-- Add theme colors in bootstrap --*/
+$cstm-theme-colors: (
+    "cstm-primary": #023047,
+    "cstm-secondary": #219EBC,
+    "cstm-accent": #D37300,
+    "cstm-sky-blue": #0172AF,
+    "cstm-blue-green": #37966f,
+    "cstm-yellow": #FFB703,
+    "cstm-peach": #FF4066,
+    "cstm-dark": #212529,
+    "cstm-gray": #6c757d,
+    "cstm-light-gray": #ced4da
+
+);
+
+$theme-colors: map-merge($cstm-theme-colors, $theme-colors);
+
+
+/*-- import bootstrap --*/
+@import '../bootstrap/scss/bootstrap';

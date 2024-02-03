@@ -1,0 +1,163 @@
+/* Bootstrap Icons fonts stylesheet */
+@import "../bootstrap-icons/font/bootstrap-icons.css";
+
+/* Font: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Custom Properties */
+:root {
+    --font-family-primary: "Poppins", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: var(--font-family-primary);
+    width: 100%;
+    height: 100%;
+    color: var(--bs-cstm-dark);
+    background-color: var(--bs-white);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.section {
+    height: 100%;
+    max-height: fit-content;
+}
+
+.form-control, .form-select {
+    border-color: var(--bs-cstm-light-gray);
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+
+
+/* ---< Scrollbar Style >--- */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+    background-color: rgba(var(--bs-cstm-primary-rgb), 0.8);
+}
+
+
+
+/* ---< Gradient Style >--- */
+.bg-cstm-gradient {
+    background: var(--bs-cstm-sky-blue);
+    background: linear-gradient(135deg, var(--bs-cstm-sky-blue) 0%, var(--bs-cstm-blue-green) 100%);
+}
+  
+.text-cstm-gradient {
+    background: -webkit-linear-gradient(315deg, var(--bs-cstm-sky-blue) 0%, var(--bs-cstm-blue-green) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+/* ---< Navigation >--- */
+.navbar-toggler:focus {                                 /* Burger Icon */
+    box-shadow: 0 0 0 0.2rem rgba(var(--bs-cstm-dark-rgb), 0.3);
+}
+
+.navbar .navbar-brand {
+    font-size: 1.375rem;
+    letter-spacing: 0.031rem;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-cstm-dark);
+}
+
+
+
+
+/* ---< Header >--- */
+header .badge {
+    padding: 0.4rem 0.6rem;
+}
+
+header .profile {
+    position: relative;
+}
+
+header .profile::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5vw;
+    background: linear-gradient(135deg, var(--bs-cstm-sky-blue) 0%, var(--bs-cstm-blue-green) 100%);
+    z-index: 1;
+}
+
+header .profile .profile-img {
+    position: relative;
+    z-index: 2; 
+    border-radius: 5vw;
+    height: 65vw;
+    max-height: 34.375rem;
+    width: auto;
+}
+
+
+
+/* ---< Footer >--- */
+footer a {
+    color: var(--bs-cstm-sky-blue);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--bs-cstm-primary);
+    text-decoration: underline;
+}
+
+
+
+/* ---< Resume: Page Content >--- */
+#page_content .dl-resume {
+    padding: 0.9rem 1.1rem;
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+#page_content .skillset .row div > div {
+    background-color: var(--bs-light);
+    transition: background-color 0.3s ease;
+}
+
+#page_content .skillset .row div > div:hover {
+    background-color: var(--bs-cstm-primary);
+    color: var(--bs-white);
+}
+
+
+
+/* ---< Projects >--- */
+#projects img {
+    max-height: 25rem;
+}
